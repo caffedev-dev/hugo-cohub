@@ -15,14 +15,13 @@
 
     <div class="row">
       {{ range .galleryImage }}
-        <div class="col-md-6">
-          <div class="gallery-item">
-            <a href="{{ .image | absURL }}" data-source="{{ .image | absURL }}"
-               title="{{ .description }}">
-                <img src="{{ .image | absURL }}" alt="gallery-images">
-            </a>
-          </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <a href="{{ .image | absURL }}" data-source="{{ .image | absURL }}" title="{{ .description }}">
+            <img src="{{ .image | absURL }}" alt="gallery-images">
+          </a>
         </div>
+      </div>
       {{ end }}
     </div>
   </div>
